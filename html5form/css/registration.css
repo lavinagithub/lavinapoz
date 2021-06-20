@@ -1,0 +1,61 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(182, 92, 82);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.outerContainer {
+  margin: auto;
+  width: 60%;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(243, 234, 233);
+}
+
+label {
+  color: rgb(182, 92, 82);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  display: block;
+  margin-top: 10px;
+}
+.form_input {
+  width: 70%;
+  height: 1.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 5px;
+  display: block;
+}
+.sel {
+ 
+  height: 2rem;
+}
+.tc {
+  display: inline;
+}
+/* .addr {
+  width: 50%;
+} */
+.addressContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.formButton {
+  background-color: rgb(192, 78, 78);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 5px;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/registration.css" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <h1>Register to Partner with us</h1>
+    <!-- Outer section begins -->
+    <section class="outerContainer">
+      <form name="registration_form" method="POST" action="thankyou.html">
+        <!-- First name -->
+        <label for="firstName">First Name</label>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          class="form_input"
+          placeholder="Enter your firstname"
+        />
+
+        <!-- Last name -->
+        <label for="lastName">Last Name</label>
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          class="form_input"
+          placeholder="Enter your Lastname"
+        />
+
+        <!-- Email -->
+        <label for="userEmail">Email Address</label>
+        <input
+          type="email"
+          name="userEmail"
+          id="userEmail"
+          class="form_input"
+          placeholder="Enter your Email"
+        />
+        <!-- Phone -->
+        <label for="userPhone">Phone</label>
+        <input
+          type="tel"
+          name="userPhone"
+          id="userPhone"
+          class="form_input"
+          placeholder="Enter your Phone"
+        />
+        <!-- Date of Birth -->
+        <label for="userDob">Date of Birth</label>
+        <input
+          type="date"
+          name="userDob"
+          id="userDob"
+          class="form_input"
+          placeholder="Enter your DOB"
+        />
+
+        <div>
+          <fieldset>
+            <legend>Address:</legend>
+            <div class="addressContainer">
+              <div>
+                <label for="userStreet">Street</label>
+                <input
+                  type="text"
+                  name="userStreet"
+                  id="userStreet"
+                  class="form_input addr"
+                  placeholder="Enter your Street Name"
+                />
+              </div>
+              <div>
+                <label for="userSuburb">Suburb</label>
+                <input
+                  type="text"
+                  name="userSuburb"
+                  id="userSuburb"
+                  class="form_input addr"
+                  placeholder="Enter your Suburb Name"
+                />
+              </div>
+
+              <div>
+                <label for="userState">State</label>
+                <select name="userState" class="form_input sel">
+                  <option value="">Select a State</option>
+                  <option value="NSW">NSW</option>
+                  <option value="VIC">VIC</option>
+                  <option value="SA">SA</option>
+                  <option value="SA">QLD</option>
+                  <option value="TAS">TAS</option>
+                </select>
+              </div>
+              <div>
+                <label for="userCountry">Country</label>
+                <input
+                  type="text"
+                  name="userCountry"
+                  id="userCountry"
+                  class="form_input addr"
+                  placeholder="Enter your Country Name"
+                />
+              </div>
+
+              <div>
+                <label for="userPostcode">Post Code </label>
+                <input
+                  type="number"
+                  name="userPostcode"
+                  id="userPostcode"
+                  class="form_input addr"
+                  placeholder="Enter your PostCode"
+                />
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <label for="gender">Gender</label>
+        <select name="userGender" class="form_input sel">
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="business">Type of Business</label>
+        <input type="radio" name="business" /> Events
+        <input type="radio" name="business" /> Film and Media
+        <input type="radio" name="business" /> Entertainment
+        <input type="radio" name="business" /> Tourism
+
+        <label for="userFile">File</label>
+        <input type="file" name="userFile" id="userFile" class="form_input" />
+
+        <input
+          type="checkbox"
+          name="userTC"
+          id="userTC"
+          class="tc"
+          class="form_input"
+        />
+        I agree to the Terms and conditions
+
+        <div>
+          <input type="submit" class="formButton" />
+          <input type="reset" class="formButton" />
+        </div>
+      </form>
+    </section>
+    <!-- outer section ends -->
+  </body>
+</html>
